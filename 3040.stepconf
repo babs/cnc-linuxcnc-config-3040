@@ -47,8 +47,8 @@
   <property name="pin11inv" type="bool" value="True"/>
   <property name="pin12" type="string" value="both-z"/>
   <property name="pin12inv" type="bool" value="True"/>
-  <property name="pin13" type="string" value="unused-input"/>
-  <property name="pin13inv" type="bool" value="False"/>
+  <property name="pin13" type="string" value="probe-in"/>
+  <property name="pin13inv" type="bool" value="True"/>
   <property name="pin14" type="string" value="estop-out"/>
   <property name="pin14inv" type="bool" value="False"/>
   <property name="pin15" type="string" value="unused-input"/>
