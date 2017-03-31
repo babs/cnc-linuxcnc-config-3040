@@ -126,10 +126,10 @@
   <property name="pp2_pin9_in_inv" type="int" value="0"/>
   <property name="pp2_pin9inv" type="int" value="0"/>
   <property name="pp3_direction" type="int" value="0"/>
-  <property name="pyvcp" type="bool" value="False"/>
+  <property name="pyvcp" type="bool" value="True"/>
   <property name="pyvcpconnect" type="bool" value="True"/>
   <property name="pyvcphaltype" type="int" value="1"/>
-  <property name="pyvcpname" type="string" value="custompanel.xml"/>
+  <property name="pyvcpname" type="string" value="spindle.xml"/>
   <property name="s32in" type="float" value="10.0"/>
   <property name="s32out" type="float" value="10.0"/>
   <property name="sim_hardware" type="bool" value="False"/>

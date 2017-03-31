@@ -1,7 +1,64 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <pyvcp>
-<!-- 
-Include your PyVCP panel here.
-The contents of this file will not be overwritten when you run stepconf again.
--->
+  <vbox>
+    <relief>RIDGE</relief>
+    <bd>6</bd>
+    <meter>
+      <halpin>"spindle-speed"</halpin>
+      <text>"Spindle"</text>
+      <subtext>"cur. rpm"</subtext>
+      <max_>24000</max_>
+    </meter>
+    <hbox>
+      <label>
+        <text>"Setpoint: "</text>
+        <font>("Helvetica",16)</font>
+      </label>
+      <number>
+        <halpin>"spindle-speed-num"</halpin>
+        <font>("Helvetica",16)</font>
+        <format>"4.0f rpm"</format>
+      </number>
+    </hbox>
+    <hbox>
+      <label>
+        <text>"Spindle-At-Speed  "</text>
+        <font>("Helvetica",16)</font>
+      </label>
+      <led>
+        <halpin>"spindle-at-speed-led"</halpin>
+        <size>30</size>
+        <on_color>"green"</on_color>
+        <off_color>"red"</off_color>
+      </led>
+    </hbox>
+    <hbox>
+      <number>
+        <halpin>"spindle-cur-current"</halpin>
+        <font>("Helvetica",16)</font>
+        <format>"4.1fA"</format>
+      </number>
+      <label>
+        <text>" / "</text>
+        <font>("Helvetica",16)</font>
+      </label>
+      <number>
+        <halpin>"spindle-cur-voltage"</halpin>
+        <font>("Helvetica",16)</font>
+        <format>"4.1fV"</format>
+      </number>
+    </hbox>
+    <hbox>
+      <label>
+        <text>"Probe"</text>
+        <font>("Helvetica",16)</font>
+      </label>
+      <led>
+        <halpin>"probe-led"</halpin>
+        <size>30</size>
+        <on_color>"green"</on_color>
+        <off_color>"red"</off_color>
+      </led>
+    </hbox>
+  </vbox>
 </pyvcp>

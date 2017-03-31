@@ -1,4 +1,28 @@
 # Include your customized HAL commands here
 # The commands in this file are run after the AXIS GUI (including PyVCP panel) starts
 
-sets spindle-at-speed true
+# To be fixed using a scale (rpm 24k / freq 400)
+# http://linuxcnc.org/docs/html/examples/spindle.html
+
+#net spindle-cmd-rpm-abs    => pyvcp.spindle-speed
+net spindle-cmd-rpm-abs    => pyvcp.spindle-speed-num
+
+# RPM derived from the freq read off the VFD
+net spindle-real-speed => vfd.spdvfd.outrpm
+net spindle-real-speed => pyvcp.spindle-speed
+
+# At speed led
+net spindle-at-speed => pyvcp.spindle-at-speed-led
+net spindle-at-speed => vfd.spdvfd.atfreq
+
+# Probe led
+net probe-in => pyvcp.probe-led
+
+# Amps
+net spindle-cur-current => pyvcp.spindle-cur-current
+net spindle-cur-current => vfd.spdvfd.outcurrent
+
+# Votls
+net spindle-cur-voltage => pyvcp.spindle-cur-voltage
+net spindle-cur-voltage => vfd.spdvfd.outvoltage
+

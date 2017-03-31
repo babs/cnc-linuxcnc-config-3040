@@ -1,2 +1,9 @@
 # Include your customized HAL commands here
 # This file will not be overwritten when you run stepconf again
+
+# Extract deploy vfd to a proper place, rename it maybe ?
+loadusr -Wn vfd ~/bin/nowforever_vfd.py
+
+net spindle-cmd-rpm-abs               => vfd.spdvfd.rpmset
+net spindle-cw motion.spindle-forward => vfd.spdvfd.forward
+net spindle-enable motion.spindle-on  => vfd.spdvfd.run
