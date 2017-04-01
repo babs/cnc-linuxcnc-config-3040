@@ -7,3 +7,4 @@ loadusr -Wn vfd ~/bin/nowforever_vfd.py
 net spindle-cmd-rpm-abs               => vfd.spdvfd.rpmset
 net spindle-cw motion.spindle-forward => vfd.spdvfd.forward
 net spindle-enable motion.spindle-on  => vfd.spdvfd.run
+net spindle-at-speed motion.spindle-at-speed => vfd.spdvfd.atfreq
