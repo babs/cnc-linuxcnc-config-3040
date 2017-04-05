@@ -33,13 +33,17 @@
       </led>
     </hbox>
     <hbox>
+      <label>
+        <text>"I:"</text>
+        <font>("Helvetica",16)</font>
+      </label>
       <number>
         <halpin>"spindle-cur-current"</halpin>
         <font>("Helvetica",16)</font>
         <format>"4.1fA"</format>
       </number>
       <label>
-        <text>" / "</text>
+        <text>" / U:"</text>
         <font>("Helvetica",16)</font>
       </label>
       <number>
@@ -47,6 +51,18 @@
         <font>("Helvetica",16)</font>
         <format>"4.1fV"</format>
       </number>
+    </hbox>
+    <hbox>
+      <label>
+        <text>"Power:"</text>
+        <font>("Helvetica",16)</font>
+      </label>
+      <number>
+        <halpin>"spindle-cur-power"</halpin>
+        <font>("Helvetica",16)</font>
+        <format>"4.1f VA"</format>
+      </number>
+
     </hbox>
     <hbox>
       <label>

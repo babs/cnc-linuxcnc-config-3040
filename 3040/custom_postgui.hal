@@ -26,3 +26,6 @@ net spindle-cur-current => vfd.spdvfd.outcurrent
 net spindle-cur-voltage => pyvcp.spindle-cur-voltage
 net spindle-cur-voltage => vfd.spdvfd.outvoltage
 
+# Power
+net spindle-cur-power => pyvcp.spindle-cur-power
+net spindle-cur-power => vfd.spdvfd.power
