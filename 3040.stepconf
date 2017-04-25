@@ -52,7 +52,7 @@
   <property name="pin14" type="string" value="estop-out"/>
   <property name="pin14inv" type="bool" value="False"/>
   <property name="pin15" type="string" value="unused-input"/>
-  <property name="pin15inv" type="bool" value="False"/>
+  <property name="pin15inv" type="bool" value="True"/>
   <property name="pin16" type="string" value="ystep"/>
   <property name="pin16inv" type="bool" value="False"/>
   <property name="pin17" type="string" value="zdir"/>
@@ -129,7 +129,7 @@
   <property name="pyvcp" type="bool" value="True"/>
   <property name="pyvcpconnect" type="bool" value="True"/>
   <property name="pyvcphaltype" type="int" value="1"/>
-  <property name="pyvcpname" type="string" value="spindle.xml"/>
+  <property name="pyvcpname" type="string" value="custompanel.xml"/>
   <property name="s32in" type="float" value="10.0"/>
   <property name="s32out" type="float" value="10.0"/>
   <property name="sim_hardware" type="bool" value="False"/>
